@@ -4,7 +4,8 @@ module.exports = grammar({
   name: 'dotenv',
   
   extras: $ => [
-    $.comment
+    $.comment,
+    /\s/
   ],
   
   rules: {
