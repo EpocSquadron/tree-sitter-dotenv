@@ -19,13 +19,16 @@ module.exports = grammar({
     variable: $ => seq(
       field("name", $.identifier),
       "=",
-      field("value", $.value)
+      optional(field("value", $.value))
     ),
     
     identifier: $ => /[A-Z][0-9a-zA-Z_]*/,
     value: $ => choice(
       $.bool,
-      /\w+/,
+      $.string_interpolated,
+      $.string_literal,
+      $.integer,
+      $.raw_value,
       // TODO: More value types
     ),
     
@@ -33,5 +36,13 @@ module.exports = grammar({
       'true',
       'false'
     ),
+
+    integer: $ => /\d+/,
+
+    string_interpolated: $ => seq('"', repeat(/[^"]/), '"'),
+
+    string_literal: $ => seq("'", repeat(/[^']/), "'"),
+
+    raw_value: $ => /\w+/
   }
 })
