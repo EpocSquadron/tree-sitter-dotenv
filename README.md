@@ -9,12 +9,12 @@ Early experimentation; does not actually work.
 
 ## Roadmap
 
-- [ ] Support comments
-- [ ] Support simple variables (no interpolation)
+- [x] Support comments
+- [x] Support simple variables (no interpolation)
 - [ ] Support multiline variables
 - [ ] Support interpolated variables
 - [ ] Support interpolated shell commands
-- [ ] Tests
+- [x] Tests
 
 ## Contributing
 
