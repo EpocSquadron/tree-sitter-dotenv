@@ -1,0 +1,24 @@
+===
+Simple-valued Variables
+===
+
+EMPTY=
+
+EMPTY=""
+
+USER=someone
+
+DEBUG=0
+
+DEBUG=true
+
+DEBUG='true'
+
+DEBUG="On"
+
+DEBUG="Yes"
+
+---
+
+(source_file
+    (variable))
