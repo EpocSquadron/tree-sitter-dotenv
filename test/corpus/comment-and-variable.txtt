@@ -1,0 +1,26 @@
+================================================================================
+Comments
+================================================================================
+
+# Comment
+IDENTIFIER=true # A line comment
+
+#Comment with no spaces
+
+#
+# Multi-line comment with blank lines
+#
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (comment)
+  (variable
+    (identifier)
+    (value
+      (bool)))
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment))
