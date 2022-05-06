@@ -1,0 +1,15 @@
+================================================================================
+Interpolated Strings
+================================================================================
+
+DATABASE_URL="postgres://$USER@localhost/my_database"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (variable
+    (identifier)
+    (value
+      (string_interpolated
+        (interpolated_variable
+          (identifier))))))
