@@ -1,6 +1,6 @@
-===
+================================================================================
 Simple-valued Variables
-===
+================================================================================
 
 EMPTY=
 
@@ -18,7 +18,36 @@ DEBUG="On"
 
 DEBUG="Yes"
 
----
+--------------------------------------------------------------------------------
 
 (source_file
-    (variable))
+  (variable
+    (identifier))
+  (variable
+    (identifier)
+    (value
+      (string_interpolated)))
+  (variable
+    (identifier)
+    (value
+      (raw_value)))
+  (variable
+    (identifier)
+    (value
+      (integer)))
+  (variable
+    (identifier)
+    (value
+      (bool)))
+  (variable
+    (identifier)
+    (value
+      (string_literal)))
+  (variable
+    (identifier)
+    (value
+      (string_interpolated)))
+  (variable
+    (identifier)
+    (value
+      (string_interpolated))))
